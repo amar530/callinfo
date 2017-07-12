@@ -1,0 +1,77 @@
+
+#backg{
+	background: #f2f2f2;
+}
+.mainCont{
+	background-color: #ffffff;
+	border:2px solid #ccc;
+	margin-top: 20px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.navbar{
+	background-color: #0078d7;
+}
+a.navbar-brand{
+	color: #ffffff;
+}
+a:hover.navbar-brand{
+	color: #ffffff;
+}
+/*table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;    
+}*/
+#info{
+	padding-bottom: 50px;
+}
+.text-right h4{
+	color: #ffffff;
+}
+@media(max-width: 768px)
+{
+	.text-right{
+		text-align: center;
+	}
+	.navbar-brand{
+		text-align: center;
+	}
+}
+/*#error{
+	color: red;
+	font-style: bold;
+}*/
+/*#mauData p{
+	background-color: #ccc;
+}*/
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #eee;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+footer{
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}

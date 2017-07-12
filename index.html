@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Codeplace</title>
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    
+</head>
+<body>
+<nav class="navbar navbar">
+  	<div class="container">
+	  <div class="row">
+	  	<div class="col-xs-12 col-sm-6">
+	  		<div class="navbar-header">
+	      		<a class="navbar-brand" href="#">Call Details</a>
+	    	</div>
+	  	</div>
+	  	<div class="col-xs-12 col-sm-6 text-right">
+	  		<h4><span id="txt"></span>, <span id="txt1"></span></h4>
+	  	</div>
+	  </div>
+	</div>
+</nav><!-- end of nav -->
+<div ng-app="myApp" ng-controller="cntr">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12" style="padding-bottom: 10px;">
+			<div style="text-align: center;"><h2>List Of Names</h2></div>
+				<table id="t01">
+				  <tr>
+				    <th>Contact Name</th>
+				    <th>Phone</th> 
+				  </tr>
+				  <tr ng-repeat="x in datas">
+				    <td>{{x.callerName}}</td>
+				    <td ng-click="showDetails(x)" style="cursor: pointer;">{{x.callerNumber}}</td>
+				  </tr>
+				</table>
+			</div>
+			<div class="col-sm-6 col-xs-12" id="info">
+			<div style="text-align: center;"><h2>Call Information: {{txt.callerNumber}}</h2></div>
+
+				<table id="t01">
+				  <tr>
+				    <th>Time</th>
+				    <th>Type</th> 
+				    <th>Second</th> 
+				  </tr>
+				  <tr ng-repeat="y in txt.callDetails">
+				  	<td>{{y.callTime | date:'dd-MMMM'}}</td>
+				  	<td>{{y.callType}}</td>
+				  	<td>{{y.callDuration}}</td>
+				  </tr>
+				</table>
+				<!-- <h1>{{txt}}</h1> -->
+			</div>
+		</div>
+	</div>
+</div>
+ <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017  Amarjeet</p>
+ </footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/angular.js"></script>
+</body>
+</html>
