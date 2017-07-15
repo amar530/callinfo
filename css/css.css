@@ -2,13 +2,6 @@
 #backg{
 	background: #f2f2f2;
 }
-.mainCont{
-	background-color: #ffffff;
-	border:2px solid #ccc;
-	margin-top: 20px;
-	padding-top: 50px;
-	padding-bottom: 20px;
-}
 .navbar{
 	background-color: #0078d7;
 }
@@ -18,14 +11,6 @@ a.navbar-brand{
 a:hover.navbar-brand{
 	color: #ffffff;
 }
-/*table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 10px;
-    text-align: left;    
-}*/
 #info{
 	padding-bottom: 50px;
 }
@@ -41,13 +26,6 @@ th, td {
 		text-align: center;
 	}
 }
-/*#error{
-	color: red;
-	font-style: bold;
-}*/
-/*#mauData p{
-	background-color: #ccc;
-}*/
 
 table {
     width:100%;
@@ -74,4 +52,10 @@ footer{
   padding: 10px;
   background: #000;
   color: #fff;
+}
+#number:link{
+	color:green;
+}
+td a{
+	color: inherit;
 }

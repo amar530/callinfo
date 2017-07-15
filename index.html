@@ -36,7 +36,7 @@
 				  </tr>
 				  <tr ng-repeat="x in datas">
 				    <td>{{x.callerName}}</td>
-				    <td ng-click="showDetails(x)" style="cursor: pointer;">{{x.callerNumber}}</td>
+				    <td><a href="#" ng-click="showDetails(x)">{{x.callerNumber}}</a></td>
 				  </tr>
 				</table>
 			</div>
@@ -55,7 +55,6 @@
 				  	<td>{{y.callDuration}}</td>
 				  </tr>
 				</table>
-				<!-- <h1>{{txt}}</h1> -->
 			</div>
 		</div>
 	</div>
